@@ -14,6 +14,7 @@ public class PlayerControl : MonoBehaviour {
 		WinText.text="";
 		SetCountText();
 		
+		
 	}
 	
 	// Update is called once per frame
@@ -33,7 +34,7 @@ public class PlayerControl : MonoBehaviour {
 			count=count+1;
 			SetCountText();
 		}
-		if(other.gameObject.tag=="Capsule")
+		if(other.gameObject.tag=="Portal")
 		{
 			Application.LoadLevel("Roll_A_Ball_Scene2");
 		}
